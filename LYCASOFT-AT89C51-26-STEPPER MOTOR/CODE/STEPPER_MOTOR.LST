@@ -1,0 +1,40 @@
+C51 COMPILER V9.53.0.0   STEPPER_MOTOR                                                     12/29/2018 12:01:37 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE STEPPER_MOTOR
+OBJECT MODULE PLACED IN STEPPER_MOTOR.OBJ
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE STEPPER_MOTOR.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include "8051_delay.h"
+   3          
+   4          void main()
+   5          {
+   6   1        while(1)
+   7   1        {
+   8   2          P2=0X08;
+   9   2          delay(50);
+  10   2          P2=0X02;
+  11   2          delay(50);
+  12   2          P2=0X04;
+  13   2          delay(50);
+  14   2          P2=0X01;
+  15   2          delay(50);
+  16   2        }
+  17   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     68    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
